@@ -1,0 +1,33 @@
+:root {
+  --light-bg: #ffffff;
+  --light-text: #000000;
+  --dark-bg: #000000;
+  --dark-text: #ffffff;
+  --primary-color: #f1c40f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.app.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}

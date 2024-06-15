@@ -1,0 +1,80 @@
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --card-background: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --icon-color: #007bff;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: #f9f9f9;
+    --card-background: #444;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --icon-color: #1e90ff;
+}
+
+.skills-section {
+    padding: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 200px;
+}
+
+.app.dark .skills-section h2{
+    color: #f9f9f9;
+}
+
+.skill-heading {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--text-color);
+
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: var(--icon-color);
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-size: 1.25rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

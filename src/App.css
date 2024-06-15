@@ -1,0 +1,78 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #1c1c1c;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --highlight-light: #f7d801;
+  --highlight-dark: #f7d801;
+}
+
+.app.light {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.app.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+button {
+  background-color: var(--highlight-light);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.app.dark button {
+  background-color: var(--highlight-dark);
+}
+
+.social-icons {
+  margin-top: 5cm;
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+/* Adjust social icon color for dark theme */
+.social-icon-light {
+  color: black; /* Default icon color for light theme */
+}
+
+.social-icon-dark {
+  color: #fff; /* White color for icons in dark theme */
+}
+
+.email {
+  position: fixed;
+  right: 1rem; /* Adjust as needed */
+  bottom: 3rem; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #007bff; /* Adjust color as needed */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; /* Adjust height to center vertically */
+}
